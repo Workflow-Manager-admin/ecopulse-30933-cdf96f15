@@ -1,7 +1,11 @@
 import React from 'react';
 import './App.css';
+import AirQualityCard from './components/AirQualityCard';
 
 function App() {
+  // Example coordinates: downtown San Francisco, CA, USA
+  const testLocation = { lat: 37.7749, lon: -122.4194 };
+
   return (
     <div className="app">
       <nav className="navbar">
@@ -28,6 +32,8 @@ function App() {
             
             <button className="btn btn-large">Button</button>
           </div>
+          {/* --- Air Quality Card integration (test coordinates shown) --- */}
+          <AirQualityCard coords={testLocation} />
         </div>
       </main>
     </div>

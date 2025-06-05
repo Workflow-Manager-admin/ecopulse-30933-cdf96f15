@@ -21,3 +21,11 @@ webpack compiled successfully
 Compiling...
 Compiled successfully!
 webpack compiled successfully
+Compiling...
+Failed to compile.
+
+Module not found: Error: Can't resolve 'axios' in '/home/kavia/workspace/code-generation/ecopulse-30933-cdf96f15/eco_pulse_frontend/src/services'
+ERROR in ./src/services/openWeatherMapService.js 3:0-26
+Module not found: Error: Can't resolve 'axios' in '/home/kavia/workspace/code-generation/ecopulse-30933-cdf96f15/eco_pulse_frontend/src/services'
+
+webpack compiled with 1 error
