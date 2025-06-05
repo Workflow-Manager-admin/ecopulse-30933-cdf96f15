@@ -46,6 +46,10 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 Launches the test runner in interactive watch mode.
 
+### `npm run test:coverage`
+
+Runs tests and generates a coverage report using Jest and React Testing Library. The coverage output is available in the `coverage/` folder and a summary is shown in the terminal.
+
 ### `npm run build`
 
 Builds the app for production to the `build` folder.\
@@ -107,6 +111,12 @@ The main brand colors are defined as CSS variables in `src/App.css`:
   --border-color: rgba(255, 255, 255, 0.1);
 }
 ```
+
+### Code/Test Coverage Configuration
+
+- Code coverage is configured via a `jest` entry in `package.json`.
+- To see code coverage reports, run `npm run test:coverage` in the project folder.
+- Reports include `.json`, `lcov`, and `text` (terminal output) for integration with CI or code quality tools.
 
 ### Components
 
