@@ -11,6 +11,30 @@ This project provides a minimal React template with a clean, modern UI and minim
 
 ## Getting Started
 
+### Project Folder Structure
+
+This project follows a scalable React architecture, with these main directories in `src/`:
+
+- `components/` - Reusable UI components (buttons, cards, charts, etc.)
+- `features/` - Feature-based folders for main app modules
+- `hooks/` - Custom React hooks
+- `contexts/` - React context providers and shared app state
+- `services/` - API service utilities (e.g. HTTP clients, Firebase logic)
+- `utils/` - Utility/helper functions
+- `assets/` - Static files (images, icons, etc)
+- `styles/` - Global, theme, or utility styles
+- `constants/` - App-wide constant values
+
+### Dependencies
+
+Installed core dependencies:
+- **axios** – HTTP client for API calls
+- **dotenv** – Environment variable handling
+- **@react-google-maps/api** – Google Maps integration for React
+- **firebase** – For database/realtime features if used
+- **react-toastify** – User notifications
+- **react**/**react-dom**/**react-scripts** – Core React ecosystem
+
 In the project directory, you can run:
 
 ### `npm start`
