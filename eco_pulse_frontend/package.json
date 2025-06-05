@@ -3,17 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "^5.0.1",
     "axios": "^1.6.7",
     "dotenv": "^16.4.5",
-    "firebase": "^9.22.2"
+    "firebase": "^9.22.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --env=jsdom",
+    "test:coverage": "react-scripts test --env=jsdom --coverage",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -32,7 +33,11 @@
     ]
   },
   "devDependencies": {
-    "cross-env": "^7.0.3"
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^14.6.1",
+    "cross-env": "^7.0.3",
+    "jest": "^27.5.1"
   },
   "jest": {
     "collectCoverage": true,
@@ -50,12 +55,5 @@
       "clover"
     ],
     "testEnvironment": "jsdom"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "test:coverage": "react-scripts test --env=jsdom --coverage",
-    "eject": "react-scripts eject"
   }
 }
