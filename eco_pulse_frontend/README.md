@@ -51,6 +51,47 @@ Launches the test runner in interactive watch mode.
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
+## Environment Variables & API Keys
+
+### Setup
+
+To run the application, you need to provide several API keys and configuration variables. 
+
+1. **Copy `.env.example` to `.env`:**
+
+   ```sh
+   cp .env.example .env
+   ```
+
+2. **Edit `.env` and fill in the values** for each key with your actual secrets (never commit real secrets to version control!).
+
+#### Required Variables
+
+| Key | Description |
+|-----|-------------|
+| `REACT_APP_OPENWEATHERMAP_API_KEY` | API key for [OpenWeatherMap](https://openweathermap.org/api) (air, weather data) |
+| `REACT_APP_NASA_API_KEY`           | API key for [NASA APIs](https://api.nasa.gov/) (satellite/deforestation data) |
+| `REACT_APP_GOOGLE_MAPS_API_KEY`    | API key for [Google Maps](https://developers.google.com/maps) (map display) |
+| `REACT_APP_FIREBASE_API_KEY`       | Firebase web API key (find in Firebase Console) |
+| `REACT_APP_FIREBASE_AUTH_DOMAIN`   | Firebase Auth Domain |
+| `REACT_APP_FIREBASE_PROJECT_ID`    | Firebase Project ID |
+| `REACT_APP_FIREBASE_STORAGE_BUCKET`| Firebase Storage Bucket |
+| `REACT_APP_FIREBASE_MESSAGING_SENDER_ID` | Firebase Messaging Sender ID |
+| `REACT_APP_FIREBASE_APP_ID`        | Firebase App ID |
+
+> **Tip:** If you lack an API key, register for each provider (free tiers are available).
+
+### Security Best Practices
+
+- **Never commit your real `.env` to source control.** Only commit `.env.example`.
+- Treat your API keys as secrets—do not expose them in public repositories.
+- The app may not function if any variables are missing; startup warnings/errors are displayed for missing keys.
+
+### How Environment Variables are Loaded
+
+- All environment variables are read securely in [`src/config.js`](src/config.js).
+- If any variable is missing, a warning/error will be logged in the developer console on startup.
+
 ## Customization
 
 ### Colors
