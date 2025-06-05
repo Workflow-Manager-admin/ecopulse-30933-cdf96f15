@@ -8,7 +8,6 @@
     "react-scripts": "^5.0.1",
     "axios": "^1.6.7",
     "dotenv": "^16.4.5",
-    "@react-google-maps/api": "^2.21.2",
     "firebase": "^9.22.2",
     "react-toastify": "^9.2.2"
   },
