@@ -1,0 +1,2 @@
+# This file ensures the src directory structure and subfolders are created and committed, as empty folders are not tracked by git.
+# Remove or ignore these files once actual files are added to each directory.
