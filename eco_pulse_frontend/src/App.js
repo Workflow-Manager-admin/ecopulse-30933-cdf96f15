@@ -3,8 +3,8 @@ import './App.css';
 import AirQualityCard from './components/AirQualityCard';
 
 function App() {
-  // Example coordinates: downtown San Francisco, CA, USA
-  const testLocation = { lat: 37.7749, lon: -122.4194 };
+  // Test coordinates: New York City, NY, USA
+  const newYorkCityCoords = { lat: 40.7128, lon: -74.0060 };
 
   return (
     <div className="app">
@@ -23,17 +23,19 @@ function App() {
         <div className="container">
           <div className="hero">
             <div className="subtitle">AI Workflow Manager Template</div>
-            
+
             <h1 className="title">eco_pulse_frontend</h1>
-            
+
             <div className="description">
               Start building your application.
             </div>
-            
+
             <button className="btn btn-large">Button</button>
           </div>
-          {/* --- Air Quality Card integration (test coordinates shown) --- */}
-          <AirQualityCard coords={testLocation} />
+          {/* --- Air Quality for New York City prominently displayed --- */}
+          <div style={{ display: 'flex', justifyContent: 'center', marginTop: '2em' }}>
+            <AirQualityCard coords={newYorkCityCoords} />
+          </div>
         </div>
       </main>
     </div>
